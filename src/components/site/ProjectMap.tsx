@@ -54,7 +54,7 @@ export function ProjectMap() {
   const [active, setActive] = useState<number | null>(null);
   return (
     <div className="grid gap-8 lg:grid-cols-[1fr_300px]">
-      <div className="border border-border">
+      <div className="self-start border border-border">
         <MapSvg map={SEA_MAP} region="sea" active={active} setActive={setActive} label="Southeast Asia project locations" r={13} />
       </div>
       <div className="flex flex-col gap-6">

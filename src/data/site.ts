@@ -394,7 +394,7 @@ export type OngoingProject = {
 };
 
 export const ongoing: OngoingProject[] = [
-  { title: "Blanket engineering services", client: "Vantris Energy", detail: "Call-off engineering for offshore T&I", sector: "Oil, gas and marine", service: "Transportation and installation", country: "Angola", location: { lon: 11.4, lat: -4.8, region: "africa" } },
+  { title: "Blanket engineering services", client: "Vantris Energy", detail: "Call-off engineering for offshore T&I", sector: "Oil, gas and marine", service: "Transportation and installation", country: "Angola", location: { lon: 13.2, lat: -9.6, region: "africa" } },
   { title: "Blanket engineering services", client: "PT Buwana Kreasi Internasional", detail: "Marine and mooring engineering call-offs", sector: "Oil, gas and marine", service: "Mooring and floating systems", country: "Indonesia" },
   { title: "FSRU Bali dynamic mooring analysis", client: "PLN Energi Primer Indonesia", detail: "Dynamic mooring of FSRU and LNG carrier", sector: "Oil, gas and marine", service: "Mooring and floating systems", country: "Indonesia", location: { lon: 115.2, lat: -8.8, region: "sea" } },
   { title: "FPSO Kutei North Hub module lifting", client: "Confidential", detail: "26 modules up to ~3,400 t", sector: "Oil, gas and marine", service: "Transportation and installation", country: "Indonesia", location: { lon: 117.9, lat: -0.9, region: "sea" } },
