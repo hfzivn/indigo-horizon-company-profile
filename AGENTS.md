@@ -28,3 +28,11 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- All site copy and project data live in `src/data/site.ts`; components read from it, so content edits happen in one place.
+- Home is one long page with anchor sections (`#company`, `#capability`, `#people`, `#projects`, `#clients`, `#contact`) because the brief asked for single-page anchor nav; each project gets its own page at `/projects/$slug`.
+- Project filtering logic lives in `src/lib/project-filter.ts` (tested in `src/test/project-filter.test.ts`) so UI and rules stay separate.
+- Map outlines in `src/data/map-paths.ts` are generated from Natural Earth land data with an equirectangular projection; pins use the same bbox math in `ProjectMap`.
+- Photos always render inside a `duotone` wrapper so every image shares the brand tint.
+- The contact form opens the visitor's email app (mailto) since there is no backend yet.
