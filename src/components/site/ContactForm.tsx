@@ -51,17 +51,12 @@ export function ContactForm() {
     }
     setErrors({});
     const d = parsed.data;
-    const body = [
-      `Name: ${d.name}`,
-      d.company ? `Company: ${d.company}` : "",
-      `Email: ${d.email}`,
-      d.phone ? `Phone: ${d.phone}` : "",
-      `Need: ${d.need}`,
-      "",
-      d.message,
-    ]
-      .filter((l, i) => l !== "" || i === 5)
-      .join("\n");
+    const lines = [`Name: ${d.name}`];
+    if (d.company) lines.push(`Company: ${d.company}`);
+    lines.push(`Email: ${d.email}`);
+    if (d.phone) lines.push(`Phone: ${d.phone}`);
+    lines.push(`Need: ${d.need}`, "", d.message);
+    const body = lines.join("\n");
     window.location.href = `mailto:${company.email}?subject=${encodeURIComponent(`Enquiry: ${d.need}`)}&body=${encodeURIComponent(body)}`;
     toast.success("Opening your email app", { description: `Your message is addressed to ${company.email}.` });
     e.currentTarget.reset();
