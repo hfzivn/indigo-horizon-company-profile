@@ -71,7 +71,7 @@ export function ProjectFilter() {
               </div>
               <p className="mt-2 font-semibold leading-snug text-foreground group-hover:text-primary">{p.title}</p>
               <p className="mt-1 text-sm text-muted-foreground">{p.client}</p>
-              <p className="mt-3 text-lg font-light text-primary">{p.highlight}</p>
+              <p className="mt-3 font-light text-primary">{p.highlight}</p>
             </>
           );
           return (

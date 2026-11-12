@@ -33,11 +33,11 @@ export function ValueChart() {
         <path d={`M${x(3)},212 C${x(4)},230 ${x(4) + 60},250 ${x(5)},258`} fill="none" className="stroke-periwinkle" strokeWidth={1.5} strokeDasharray="5 5" />
         <circle cx={x(3)} cy={120} r={4} className="fill-primary" />
         <circle cx={x(3)} cy={212} r={4} className="fill-periwinkle" />
-        <text x={x(1) + 10} y={160} className="fill-primary text-[12px] font-semibold">Good definition</text>
+        <text x={x(1) - 20} y={140} className="fill-primary text-[12px] font-semibold">Good definition</text>
         <text x={x(1) + 10} y={232} className="fill-periwinkle text-[12px] font-semibold">Poor definition</text>
         <text x={x(5) - 6} y={48} textAnchor="end" className="fill-foreground text-[11px]">Good execution</text>
-        <text x={x(5) - 6} y={176} textAnchor="end" className="fill-muted-foreground text-[11px]">Poor execution</text>
-        <text x={x(5) - 6} y={206} textAnchor="end" className="fill-foreground text-[11px]">Good execution</text>
+        <text x={x(5) - 6} y={150} textAnchor="end" className="fill-muted-foreground text-[11px]">Poor execution</text>
+        <text x={x(5) - 6} y={182} textAnchor="end" className="fill-foreground text-[11px]">Good execution</text>
         <text x={x(5) - 6} y={274} textAnchor="end" className="fill-muted-foreground text-[11px]">Poor execution</text>
       </svg>
       <figcaption className="mt-2 text-xs text-muted-foreground">

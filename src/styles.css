@@ -65,6 +65,7 @@
   --color-brand-2: var(--brand-2);
   --color-brand-3: var(--brand-3);
   --color-surface: var(--surface);
+  --color-map-land: var(--map-land);
   --color-on-brand: var(--on-brand);
   --color-on-brand-muted: var(--on-brand-muted);
   --color-chart-1: var(--chart-1);
@@ -93,6 +94,7 @@
   --brand-3: oklch(0.489 0.129 299); /* #6B4C9E */
   --periwinkle: oklch(0.584 0.125 278.1); /* #6B72C4 */
   --surface: oklch(0.974 0.005 275); /* #F5F6FA */
+  --map-land: oklch(0.905 0.03 272);
   --on-brand: oklch(1 0 0);
   --on-brand-muted: oklch(1 0 0 / 0.78);
 

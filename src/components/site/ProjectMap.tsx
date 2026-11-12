@@ -20,7 +20,7 @@ function MapSvg({ map, region, active, setActive, label, r }: { map: typeof SEA_
   return (
     <svg viewBox={`0 0 ${map.width} ${map.height}`} className="h-auto w-full" role="group" aria-label={label}>
       <rect width={map.width} height={map.height} className="fill-surface" />
-      <path d={map.path} className="fill-background stroke-border" strokeWidth={1} />
+      <path d={map.path} className="fill-map-land stroke-background" strokeWidth={0.8} />
       {pins
         .filter((p) => p.loc.region === region)
         .map((p) => {
@@ -60,13 +60,13 @@ export function ProjectMap() {
       <div className="flex flex-col gap-6">
         <div className="border border-border">
           <p className="eyebrow px-3 pt-3">Africa</p>
-          <MapSvg map={AFRICA_MAP} region="africa" active={active} setActive={setActive} label="Africa project locations" r={9} />
+          <MapSvg map={AFRICA_MAP} region="africa" active={active} setActive={setActive} label="Africa project locations" r={15} />
         </div>
         <div className="flex gap-5 text-xs text-muted-foreground">
           <span className="flex items-center gap-2"><span className="h-3 w-3 rounded-full bg-navy" aria-hidden="true" /> Executed</span>
           <span className="flex items-center gap-2"><span className="h-3 w-3 rounded-full bg-periwinkle" aria-hidden="true" /> Ongoing 2026</span>
         </div>
-        <ol className="max-h-80 space-y-0 overflow-y-auto text-sm scrollbar-thin">
+        <ol className="text-sm">
           {pins.map((p) => {
             const content = (
               <span className="flex gap-3 py-2">

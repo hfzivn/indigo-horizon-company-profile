@@ -13,12 +13,12 @@ export function Hero() {
         <img src={images.hero} alt="Heavy-lift crane vessel installing an offshore platform module at dawn" width={1920} height={1088} className="h-full w-full object-cover" />
       </div>
       <div className="bg-hero-overlay absolute inset-0 -z-10" aria-hidden="true" />
-      <PlatformLineArt className="pointer-events-none absolute -right-10 bottom-36 hidden w-[34rem] text-on-brand/45 md:block lg:right-4 lg:w-[40rem]" />
+      <PlatformLineArt className="pointer-events-none absolute -right-6 bottom-40 hidden w-[26rem] text-on-brand/40 md:block lg:right-6 lg:w-[30rem]" />
 
       <div className="container-site relative pb-12 pt-20 md:pb-16 md:pt-28">
         <h1 className="leading-[0.95]">
-          <span className="block text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">Excellence in</span>
-          <span className="mt-1 block pl-[8%] text-6xl font-light tracking-tight sm:text-7xl md:pl-[14%] md:text-8xl lg:text-[9.5rem]">
+          <span className="block text-[2.6rem] font-bold tracking-tight sm:text-6xl md:text-7xl">Excellence in</span>
+          <span className="relative mt-1 block pl-3 text-[3.3rem] font-light tracking-tight sm:pl-[8%] sm:text-7xl md:pl-[14%] md:text-8xl lg:text-[9.5rem]">
             consultancy
           </span>
         </h1>
