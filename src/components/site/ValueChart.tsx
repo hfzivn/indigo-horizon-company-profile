@@ -37,7 +37,6 @@ export function ValueChart() {
         <text x={x(1) + 10} y={232} className="fill-periwinkle text-[12px] font-semibold">Poor definition</text>
         <text x={x(5) - 6} y={48} textAnchor="end" className="fill-foreground text-[11px]">Good execution</text>
         <text x={x(5) - 6} y={176} textAnchor="end" className="fill-muted-foreground text-[11px]">Poor execution</text>
-        <text x={x(5) - 6} y={184 - 4} textAnchor="end" className="fill-foreground text-[11px]" dy={-2} opacity={0} />
         <text x={x(5) - 6} y={206} textAnchor="end" className="fill-foreground text-[11px]">Good execution</text>
         <text x={x(5) - 6} y={274} textAnchor="end" className="fill-muted-foreground text-[11px]">Poor execution</text>
       </svg>
