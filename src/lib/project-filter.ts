@@ -24,7 +24,7 @@ export const gridItems: GridItem[] = [
     country: p.country,
     year: p.year,
     status: p.status,
-    highlight: p.stats[0].value,
+    highlight: p.stats[0]?.value ?? "",
   })),
   ...ongoing.map((o, i) => ({
     key: `ongoing-${i}`,

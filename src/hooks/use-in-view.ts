@@ -11,7 +11,7 @@ export function useInView<T extends Element>(options: IntersectionObserverInit =
       return;
     }
     const obs = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
+      if (entry?.isIntersecting) {
         setInView(true);
         obs.disconnect();
       }

@@ -50,7 +50,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-function SectionHeading({ label, title, className }: { label: string; title: string; className?: string }) {
+function SectionHeading({ label, title, className }: { label: string; title: string; className?: string | undefined }) {
   return (
     <Reveal className={className}>
       <p className="eyebrow">{label}</p>

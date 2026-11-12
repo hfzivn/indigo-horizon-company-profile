@@ -3,7 +3,7 @@ import { useInView } from "@/hooks/use-in-view";
 
 const fmt = new Intl.NumberFormat("en-US");
 
-export function CountUp({ value, prefix = "", suffix = "", duration = 1600 }: { value: number; prefix?: string; suffix?: string; duration?: number }) {
+export function CountUp({ value, prefix = "", suffix = "", duration = 1600 }: { value: number; prefix?: string | undefined; suffix?: string | undefined; duration?: number }) {
   const { ref, inView } = useInView<HTMLSpanElement>({ threshold: 0.4 });
   const [n, setN] = useState(value);
 
