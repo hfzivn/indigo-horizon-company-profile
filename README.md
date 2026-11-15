@@ -1,14 +1,16 @@
-# Welcome to your Lovable project
+# Prinsipa Engineering
+
+Halo, aku ingin minta tolong buatkan company profile website dengan brief yang aku cantumkan dan warna : navy #1A1F4B, biru #2A4D94, gradasi #1F3F7F → #3A52A8 → #6B4C9E, periwinkle #6B72C4.
 
 This project was built with [Lovable](https://lovable.dev).
 
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/3fd1b63c-ff22-4a2f-86c7-6969487d98ee).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +22,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
